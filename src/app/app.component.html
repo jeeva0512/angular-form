@@ -1,0 +1,28 @@
+<mat-toolbar>
+<mat-toolbar-row style="background-color: rgb(9, 180, 180);">
+  <span style="font-style: italic;">We Grow!!!</span>
+  <span class="example-spacer"></span>
+  <span><mat-icon>mail</mat-icon>contact@wegrowtechnologies.com</span>
+  
+  <button mat-icon-button routerLink='../Home'><mat-icon class="example-icon">home</mat-icon></button>
+  <button mat-icon-button><mat-icon class="example-icon">settings</mat-icon></button>
+</mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav mode="side"opened>
+    <mat-nav-list style="width: 300px;">
+      <a mat-list-item routerLink='one'><mat-icon>dashboard</mat-icon>Dashboard</a>
+      <a mat-list-item routerLink='Home'><mat-icon>touch_app</mat-icon>Home</a>
+      <a mat-list-item routerLink='Aboutus'><mat-icon>description</mat-icon>About us</a>
+      <a mat-list-item routerLink='Solutions'><mat-icon>timeline</mat-icon>Solutions</a>
+      <a mat-list-item routerLink='Service'><mat-icon>thumb_up</mat-icon>Service</a>
+      <a mat-list-item routerLink='Courses'><mat-icon>library_books</mat-icon>Courses</a>
+      <a mat-list-item routerLink='Contactus'><mat-icon> contacts</mat-icon>Contact us</a>
+    </mat-nav-list>
+  </mat-sidenav>
+<mat-sidenav-content>
+  <p style="height:88vh">
+    <router-outlet></router-outlet>
+  </p>
+</mat-sidenav-content>
+</mat-sidenav-container>
